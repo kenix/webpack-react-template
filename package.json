@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/kenix/webpack-react-template#readme",
   "devDependencies": {
+    "babel-loader": "^5.4.0",
     "css-loader": "^0.23.0",
     "html-webpack-plugin": "^1.7.0",
     "style-loader": "^0.13.0",

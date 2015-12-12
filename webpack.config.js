@@ -22,12 +22,22 @@ const common = {
    path: PATHS.build,
    filename: 'bundle.js'
    },*/
+  // Add resolve.extensions. '' is needed to allow imports an extension
+  // Note the .'s before extensions!!! Without those matching will fail
+  resolve: {
+    extensions: ['', '.js', '.jsx'] // evaluated from left to right
+  },
   module: {
     loaders: [
       {
         test: /\.css$/, // RegEx to match resources
         loaders: ['style', 'css'], // loaders to apply from right to left
         include: PATHS.app // either a path or an array of paths
+      },
+      {
+        test: /\.jsx?$/,
+        loaders: ['babel'],
+        include: PATHS.app
       }
     ]
   },
