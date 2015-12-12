@@ -1,0 +1,24 @@
+{
+  "name": "webpack-react-template",
+  "version": "0.0.1",
+  "description": "A project template upon which to develop ReactJS applications using Webpack, employing Babel transpiling.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenix/webpack-react-template.git"
+  },
+  "keywords": [
+    "webpack",
+    "react",
+    "babel"
+  ],
+  "author": "Mike Zhao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kenix/webpack-react-template/issues"
+  },
+  "homepage": "https://github.com/kenix/webpack-react-template#readme"
+}
