@@ -13,6 +13,8 @@ const PATHS = {
   build: path.join(__dirname, 'build')
 };
 
+process.env.BABEL_ENV = TARGET;
+
 const common = {
   entry: PATHS.app,
   // Given webpack-dev-server runs in-memory, we can drop
@@ -44,7 +46,8 @@ const common = {
   plugins: [
     // new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      title: 'webpack react template'
+      title: 'webpack react template',
+      favicon: './favicon.ico'
     })
   ]
 };
